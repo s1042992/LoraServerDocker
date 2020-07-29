@@ -1,0 +1,41 @@
+user engineer
+topic readwrite gateway/#
+topic readwrite application/#
+
+user loraserver
+topic read gateway/+/rx
+topic write gateway/+/tx
+topic read gateway/+/stats
+topic write gateway/+/ack
+
+user lora-app-server
+topic write application/+/device/+/rx
+topic read application/+/device/+/tx
+topic write application/+/device/+/join
+topic write application/+/device/+/ack
+topic write application/+/device/+/error
+
+user lora-gateway-bridge
+topic write gateway/+/rx
+topic read gateway/+/tx
+topic write gateway/+/stats
+topic read gateway/+/ack
+
+user student
+topic read application/1/device/+/rx
+topic write application/1/device/+/tx
+topic read application/1/device/+/join
+topic read application/1/device/+/ack
+topic read application/1/device/+/error
+
+topic read application/5/device/+/rx
+topic write application/5/device/+/tx
+topic read application/5/device/+/join
+topic read application/5/device/+/ack
+topic read application/5/device/+/error
+
+user parking
+topic read application/2/#
+topic write gateway/+/config
+topic write application/2/device/+/tx
+
